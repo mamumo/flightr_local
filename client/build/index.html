@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DuR:DuR</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script type="text/javascript" src="bundle.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/highcharts-3d.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="topcontainer">
+      <h1 id="logo">DuR:DuR</h1>
+    </div>
+
+  </div>
+
+
+  <div class= "image_slider">
+    <figure>
+      <div class="slide">
+        <p>RELAX</p>
+        <img src="css/jellyfish.jpg">
+      </div>
+      <div class="slide">
+        <p> EXPLORE</p>
+        <img src="css/birds.jpg">
+      </div>
+
+      <div class="slide">
+        <p> DISCOVER </p>
+        <img src="css/indian colour.jpg">
+      </div>
+
+      <div class="slide">
+        <p> EXPERIENCE </p>
+        <img src="css/boaty mcboatface.jpg">
+      </div>
+    </figure>
+  </div>
+
+
+  <div class="bodycontainer">
+
+    <div class="selector-container">
+
+
+      <div class="controls">
+
+
+
+        <figure class="box slider_control">
+          <input type="range" id="slider" step=50 min=100 max=1000 value=800 list="tickmarks">
+          <div id="Budget"></div>
+
+
+
+          <br>
+
+
+          <input type="range" id="nightslider" step=1 min=1 max=14 value=3 list="tickmarks">
+          <div id="Nights"></div>
+
+
+          <br>
+
+          <input type="range" id="people" step=1 min= 1 max=6 value=2>
+          <div id="People"></div>
+        </figure>
+      </div>
+
+
+      <figure class="box date_city_control">
+        <input type= "date" id="check_in">
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form id="city-form">
+          <input type="text" id="city">
+          <input type="button" id="click" value="GO">
+        </form>
+      </figure>
+
+      <div id="packages" name="packages">
+
+        <div id="package1_control" class="package">
+          <h4> Package 1 </h4>
+          <div class="show">
+          <br>
+          <br>
+          <div id="p1"></div>
+          <br>
+          <br>
+          <br>
+          <div id="p1Chart"></div>
+
+          </div>
+        </div>
+
+
+        <div id="package2_control" class="package">
+          <h4> Package 2 </h4>
+          <div class="show">
+          <br>
+          <br>
+          <div id="p2"></div>
+          <br>
+          <br>
+          <br>
+          <div id="p2Chart"></div>
+          </div>
+        </div>
+
+        <div id="package3_control" class="package">
+          <h4> Package 3 </h4>
+          <div class="show">
+          <br>
+          <br>
+          <div id="p3"></div>
+          <br>
+          <br>
+          <br>
+          <div id="p3Chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
